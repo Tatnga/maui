@@ -10,29 +10,33 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <StackLayout>
-                <Entry x:Name="s1" Placeholder="First Name"/>
-                <Entry x:Name="s2" Placeholder="Last Name"/>
-                <Entry x:Name="s3" Placeholder="Age"/>
 
-                <Button Text="Add Person"  Clicked="Button_Clicked"/>
 
-                <Button Text="Add Person"  Clicked="Button_Clicked_1"/>
-                
-            </StackLayout>
-            <ListView ItemsSource="{Binding}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding FirstName}"/>
-                                <Label Text="{Binding LastName}"/>
-                                <Label Text="{Binding Age}"/>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <VerticalStackLayout>
+                <ListView x:Name="listView">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+
+                                <StackLayout>
+                                    <HorizontalStackLayout>
+                                    <HorizontalStackLayout>
+                                  
+                                        <Label Text="{Binding FirstName}" FontAttributes="Bold"  />
+                                        <Label Text="{Binding LastName}" FontAttributes="Bold" />
+                                  
+                                    </HorizontalStackLayout>
+
+                                        <Button Text="Delete" Clicked="Deletebtn" VerticalOptions="End" />
+                                        <Button Text="Eidt" Clicked="Editbtn" VerticalOptions="End"/>
+                                    </HorizontalStackLayout>
+                                </StackLayout>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </VerticalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 

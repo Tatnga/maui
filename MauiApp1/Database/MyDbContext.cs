@@ -15,6 +15,7 @@ namespace MauiApp1.Database
             CreateTable<Person>();
            // CreateTable<Inventory>();
         }
+     
         public TableQuery<Person> MyData => Table<Person>();
       //  public TableQuery<Inventory> MyData1 => Table<Inventory>();
     }

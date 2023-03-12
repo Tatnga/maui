@@ -7,7 +7,6 @@ namespace MauiApp1.Model
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 
-        [MaxLength(50)]
         public string FirstName { get; set; }
 
         [MaxLength(50)]

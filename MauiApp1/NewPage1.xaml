@@ -4,32 +4,18 @@
              x:Class="MauiApp1.NewPage1"
              Title="NewPage1">
     <VerticalStackLayout>
-        
-        
-        
-        <HorizontalStackLayout>
-        <ListView x:Name="listView">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        
-                        <StackLayout>
-                                <VerticalStackLayout>
-                                    <Label Text="{Binding FirstName}" FontAttributes="Bold" />
-                                    <Label Text="{Binding LastName}" FontAttributes="Bold" />
-                                    <Label Text="{Binding Age}" />
-                                </VerticalStackLayout>
-                                
-                                    <Button Text="Delete" Clicked="Deletebtn"/>
-                                <Button Text="Eidt" Clicked="Editbtn"/>
 
-                            </StackLayout>
-                            
-                        </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        </HorizontalStackLayout>
-        
+
+        <StackLayout>
+            <Entry x:Name="s1" Placeholder="First Name"/>
+            <Entry x:Name="s2" Placeholder="Last Name"/>
+            <Entry x:Name="s3" Placeholder="Age"/>
+
+            <Button Text="Add Person"  Clicked="Button_Clicked"/>
+
+            <Button Text="Add Person"  Clicked="Button_Clicked_1"/>
+
+
+        </StackLayout>
     </VerticalStackLayout>
 </ContentPage>

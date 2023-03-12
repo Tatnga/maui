@@ -9,5 +9,8 @@
     <MauiXaml Update="NewPage1.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="NewPage2.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
   </ItemGroup>
 </Project>
